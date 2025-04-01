@@ -1,0 +1,88 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(89, 89, 89, 0.2);
+}
+
+.logo {
+    font-size: 30px;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+/* Navigation links */
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    font-size: 20px;
+    color: var(--white-color);
+    font-weight: 500;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+nav a:hover, nav a.active {
+    color: var(--main-color);
+}
+
+/* Mobile Menu Icon */
+.nav-icon {
+    color: white;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Menu open animation */
+button.nav-icon.times {
+    transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-icon {
+        display: block; 
+    }
+
+    nav {
+        position: absolute;
+        top: 50px;
+        right: -100%; 
+        width: 250px;
+        height: 100vh;
+        background-color: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transition: right 0.s ease-in-out; 
+    }
+
+    /* When menu is open */
+    nav.active {
+        right: 0; 
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+}

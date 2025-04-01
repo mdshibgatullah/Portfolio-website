@@ -1,0 +1,31 @@
+.credit{
+    padding: 20px 0;
+    background: var(--second-bg-color);
+    font-size: 20px;
+    color: silver;
+    text-align: center;
+}
+
+.credit em{
+    color: var(--main-color);
+}
+
+/* mobile responsive */
+
+@media (max-width: 768px){
+    .credit{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px){
+    .credit{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px){
+    .credit{
+        font-size: 14px;
+    }
+}
