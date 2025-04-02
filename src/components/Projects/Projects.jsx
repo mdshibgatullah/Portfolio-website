@@ -36,7 +36,7 @@ const projects = [
       count: '04',
       title: "Blogging Platform",
       description: "A minimalistic blogging platform where users can write, edit, and share posts with markdown support and a commenting system.",
-      technologies: ["Next.js,", "TailwindCSS,", "React Quill."],
+      technologies: ["HTML", "and", "CSS."],
       image: ResumeImg4
     }
   ];
